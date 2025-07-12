@@ -91,14 +91,14 @@ const projects = [
                   ))}
                 </ul>
                 <div className="flex gap-5 text-gray-400">
-                  <a href="https://github.com" target="_blank" rel="noreferrer">
+                  <a   target="_blank" rel="noreferrer">
                     <GithubIcon
                       size={20}
                       className="hover:text-teal-300 transition"
                     />
                   </a>
                   <a
-                    href="https://external-link.com"
+                     
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -140,7 +140,7 @@ const projects = [
                   </ul>
                   <div className="flex justify-end gap-5 text-gray-400">
                     <a
-                      href="https://github.com"
+                       
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -150,7 +150,7 @@ const projects = [
                       />
                     </a>
                     <a
-                      href="https://external-link.com"
+                       
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -183,7 +183,7 @@ const projects = [
                   </ul>
                   <div className="flex justify-start gap-5 text-gray-400">
                     <a
-                      href="https://github.com"
+                       
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -193,7 +193,7 @@ const projects = [
                       />
                     </a>
                     <a
-                      href="https://external-link.com"
+                       
                       target="_blank"
                       rel="noreferrer"
                     >
