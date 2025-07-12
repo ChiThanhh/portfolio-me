@@ -29,7 +29,7 @@ const socialLinks = [
     company: "Tam Luxury",
     companyUrl: "https://tamluxury.vn",
     position: "Fullstack Developer",
-    time: "Mar 2024 – Present",
+    time: "Mar 2025 – Present",
     responsibilities: [
       "Developed an internal ERP system using React.js, Node.js, and PostgreSQL to manage inventory, HR, and workflows.",
       "Integrated AWS S3 for file storage and implemented secure authentication with role-based access control.",
