@@ -7,7 +7,7 @@ const EmailSidebar = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2.4, delay: 1.3 }}
-      className="hidden md:flex fixed right-20 bottom-0 flex-col items-center space-y-4 z-40"
+      className="hidden xl:flex fixed right-20 bottom-0 flex-col items-center space-y-4 z-40"
     >
       <a
         href="mailto:thanhdohn2003@gmail.com"

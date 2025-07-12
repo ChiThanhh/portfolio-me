@@ -7,7 +7,7 @@ const SocialSidebar = ({ socialLinks }) => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 2.4, delay:1.3 }}
-className="hidden md:flex fixed left-20 bottom-0 flex-col items-center space-y-4 z-40 mx-10"
+className="hidden xl:flex fixed left-20 bottom-0 flex-col items-center space-y-4 z-40 mx-10"
 >
 
       {socialLinks.map((link, index) => (

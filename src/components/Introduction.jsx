@@ -44,15 +44,8 @@ const Introduction = () => {
         real-world problems by developing clean, scalable, and efficient web
         applications. With hands-on experience in both internal tools and
         customer-facing systems, I aim to build solutions that are both
-        performant and user-friendly.
-        <a
-          href="https://upstatement.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-teal-300 ml-1 hover:underline"
-        >
-          Upstatement.
-        </a>
+        high-performing and user-friendly.
+ 
       </motion.p>
 
       <motion.div
@@ -68,7 +61,7 @@ const Introduction = () => {
           offset={-70}
           className="cursor-pointer px-7 py-3.5 border border-teal-300 text-teal-300 font-mono rounded hover:bg-teal-300 hover:text-[#0b192f] transition text-base duration-500"
         >
-          Check out my course!
+          Learn more about me!
         </Link>
       </motion.div>
     </div>
