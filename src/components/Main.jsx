@@ -53,7 +53,7 @@ const socialLinks = [
     company: "Bluesky Technology",
     companyUrl: "https://blueskytech.vn",
     position: "Frontend Intern",
-    time: "Aug 2023 – Nov 2023",
+    time: "Jun 2024 – Aug 2024",
     responsibilities: [
       "Worked on a café management web app using Next.js and Tailwind CSS.",
       "Developed responsive UI components and integrated APIs from backend team.",
