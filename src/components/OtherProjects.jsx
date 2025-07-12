@@ -3,45 +3,34 @@ import { Folder, GithubIcon, ExternalLinkIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
 const OtherProjects = () => {
-  const projects = [
-    {
-      title: "Integrating Algolia Search with WordPress Multisite",
-      desc: "Building a custom multisite compatible WordPress plugin to build global search with Algolia",
-      tags: ["Algolia", "WordPress", "PHP"],
-    },
-    {
-      title: "Time to Have More Fun",
-      desc: "A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS",
-      tags: ["Next.js", "Tailwind CSS", "Firebase"],
-    },
-    {
-      title: "Building a Headless Mobile App CMS From Scratch",
-      desc: "Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement",
-      tags: ["Node", "Express", "Firebase", "Vue"],
-    },
-    {
-      title: "OctoProfile",
-      desc: "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-      tags: ["Next.js", "Chart.js", "GitHub API"],
-    },
-    {
-      title: "Google Keep Clone",
-      desc: "A simple Google Keep clone built with Vue and Firebase.",
-      tags: ["Vue", "Firebase"],
-    },
-    {
-      title: "Apple Music Embeddable Web Player Widget",
-      desc: (
-        <>
-          Embeddable web player widget for Apple Music that lets users log in and
-          listen to full song playback in the browser leveraging{" "}
-          <span className="text-teal-400">MusicKit.js</span>. Read more about this
-          project on <span className="text-teal-400">9to5Mac</span>.
-        </>
-      ),
-      tags: ["MusicKit.js", "JS", "SCSS"],
-    },
-  ];
+const projects = [
+  {
+    title: "Recruitment Website",
+    desc: "Developed a recruitment platform for Tam Luxury to manage job postings and applications. Built a responsive UI and integrated backend APIs for candidate tracking.",
+    tags: ["React.js", "Tailwind CSS", "Node.js"],
+  },
+  {
+    title: "Payroll Management System",
+    desc: "Designed and implemented a payroll calculation web app for Tam Luxury to automate salary processing, tax deductions, and exportable reports.",
+    tags: ["React.js", "MUI", "Node.js"],
+  },
+  {
+    title: "AI-assisted Product Detection App",
+    desc: "Collaborated with the AI team to develop a web app that filters and classifies products based on uploaded images. Improved product identification speed in production.",
+    tags: ["React.js", "Tailwind CSS", "Node.js"],
+  },
+  {
+    title: "Gold & Diamond Pricing Tool",
+    desc: "Created a pricing calculator for internal production use to estimate costs for gold and diamond materials. Focused on accuracy and intuitive UI for factory staff.",
+    tags: ["React.js", "MUI", "Node.js"],
+  },
+  {
+    title: "Financial CRM System",
+    desc: "Built a CRM platform for Pascal Group to track customer sales, revenue, and engagement metrics. Enhanced data visualization and user workflows.",
+    tags: ["React.js", "PHP", "MySQL"],
+  },
+];
+
 
   return (
     <div className="mt-40 min-h-[500px] px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
@@ -65,7 +54,7 @@ const OtherProjects = () => {
           >
             <div className="flex justify-between items-start mb-4">
               <Folder />
-              <div className="flex space-x-2 text-gray-400">
+              {/* <div className="flex space-x-2 text-gray-400">
                 <a href="https://github.com" target="_blank" rel="noreferrer">
                   <GithubIcon
                     size={20}
@@ -82,7 +71,7 @@ const OtherProjects = () => {
                     className="hover:text-teal-300 transition"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
             <h3 className="text-white font-bold text-lg mb-2">
               {project.title}

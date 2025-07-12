@@ -36,19 +36,15 @@ const About = () => {
 
         {[
           {
-            text: `Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012 when
-            I decided to try editing custom Tumblr themes — turns out hacking
-            together a custom reblog button taught me a lot about HTML & CSS!`,
+            text: `Hello! My name is Do Chi Thanh, a Fullstack Developer with a strong focus on React.js and Node.js. I enjoy building modern, responsive, and efficient web applications that solve real-world problems.`,
             delay: 0.2,
           },
           {
-            text: `Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.`,
+            text: `Over the past year, I’ve worked on various internal systems and client-facing products, including ERP platforms, onboarding apps, and real-time chat systems. These projects helped me strengthen both my frontend and backend skills.`,
             delay: 0.3,
           },
           {
-            text: `I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React.`,
+            text: `I love clean code, scalable architecture, and bringing ideas to life through intuitive user interfaces. I'm also passionate about learning new tools, especially in the JavaScript ecosystem, and leveraging AI to boost productivity.`,
             delay: 0.4,
           },
           {
@@ -74,12 +70,12 @@ const About = () => {
           animate={isInView ? "visible" : "hidden"}
         >
           {[
-            "JavaScript (ES6+)",
-            "TypeScript",
-            "React",
-            "Eleventy",
+            "React.js",
+            "Next.js",
             "Node.js",
-            "WordPress",
+            "Express.js",
+            "Tailwind CSS",
+            "PostgreSQL",
           ].map((tech, index) => (
             <li
               key={index}
@@ -98,11 +94,11 @@ const About = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <div className="w-full max-w-xs aspect-square overflow-hidden rounded border-2 border-teal-300 group">
+        <div className="w-full max-w-xs aspect-square overflow-hidden rounded border-1 border-teal-300 group">
           <img
-            src="/about-avatar.png"
+            src="/avartar.jpg"
             alt="Avatar"
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500"
+            className="w-full h-full object-cover  group-hover:grayscale-0 transition duration-500"
           />
         </div>
       </motion.div>

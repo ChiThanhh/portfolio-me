@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Introduction = () => {
   return (
@@ -19,7 +20,7 @@ const Introduction = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.8 }}
       >
-        Brittany Chiang.
+        Do Chi Thanh.
       </motion.h1>
 
       <motion.h2
@@ -28,7 +29,7 @@ const Introduction = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.9 }}
       >
-        I build things for the web.
+        I craft web experiences that solve real problems.
       </motion.h2>
 
       <motion.p
@@ -37,9 +38,13 @@ const Introduction = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 1 }}
       >
-        I’m a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I’m focused on
-        building accessible, human-centered products at
+        I'm a Fullstack Developer with a strong focus on JavaScript
+        technologies, especially React.js for building dynamic user interfaces
+        and Node.js for creating robust backend services. I enjoy solving
+        real-world problems by developing clean, scalable, and efficient web
+        applications. With hands-on experience in both internal tools and
+        customer-facing systems, I aim to build solutions that are both
+        performant and user-friendly.
         <a
           href="https://upstatement.com"
           target="_blank"
@@ -56,12 +61,15 @@ const Introduction = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 1.2 }}
       >
-        <a
-          href="#course"
-          className="px-7 py-3.5 border border-teal-300 text-teal-300 font-mono rounded hover:bg-teal-300 hover:text-[#0b192f] transition text-base duration-500"
+        <Link
+          to="about"
+          smooth={true}
+          duration={800}
+          offset={-70}
+          className="cursor-pointer px-7 py-3.5 border border-teal-300 text-teal-300 font-mono rounded hover:bg-teal-300 hover:text-[#0b192f] transition text-base duration-500"
         >
           Check out my course!
-        </a>
+        </Link>
       </motion.div>
     </div>
   );

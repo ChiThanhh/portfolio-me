@@ -37,16 +37,15 @@ const Header = () => {
   const menuItems = ["About", "Experience", "Work", "Contact"];
 
   return (
-<header
-  className={`w-full px-14 py-4 flex items-center justify-between bg-[#0b192f] fixed top-0 z-50 transition-transform duration-300 ${
-    showHeader ? "translate-y-0 shadow-md" : "-translate-y-full"
-  }`}
->
-
+    <header
+      className={`w-full px-14 py-4 flex items-center justify-between bg-[#0b192f] fixed top-0 z-50 transition-transform duration-300 ${
+        showHeader ? "translate-y-0 shadow-md" : "-translate-y-full"
+      }`}
+    >
       {/* Logo */}
-      <a href="/" className="group flex items-center space-x-2">
+      <a href="/" className="group flex items-center space-x-2 ">
         <div className="w-10 h-10 text-teal-300 group-hover:scale-110 transition-transform duration-300">
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 84 96"
             fill="none"
@@ -70,43 +69,42 @@ const Header = () => {
             >
               B
             </text>
-          </svg>
+          </svg> */}
         </div>
       </a>
 
- {/* Desktop Menu */}
-<nav className="hidden md:flex space-x-8 items-center text-sm font-mono text-gray-300">
-  {menuItems.map((item, index) => (
-    <motion.div
-      key={item}
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.2, delay: index * 0.3 }}
-    >
-      <Link
-        to={item.toLowerCase()}
-        smooth={true}
-        duration={800}
-        offset={-80}
-        onClick={() => setMobileMenuOpen(false)}
-        className="cursor-pointer hover:text-teal-300 transition-colors duration-200"
-      >
-        <span className="text-teal-300 mr-1">0{index + 1}.</span> {item}
-      </Link>
-    </motion.div>
-  ))}
+      {/* Desktop Menu */}
+      <nav className="hidden md:flex space-x-8 items-center text-sm font-mono text-gray-300">
+        {menuItems.map((item, index) => (
+          <motion.div
+            key={item}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2, delay: index * 0.3 }}
+          >
+            <Link
+              to={item.toLowerCase()}
+              smooth={true}
+              duration={800}
+              offset={-80}
+              onClick={() => setMobileMenuOpen(false)}
+              className="cursor-pointer hover:text-teal-300 transition-colors duration-200"
+            >
+              <span className="text-teal-300 mr-1">0{index + 1}.</span> {item}
+            </Link>
+          </motion.div>
+        ))}
 
-  <motion.a
-    href="#resume"
-    initial={{ opacity: 0, y: -20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.4, delay: menuItems.length * 0.3 }}
-    className="ml-4 px-4 py-2 border border-teal-300 text-teal-300 rounded hover:bg-teal-300 hover:text-[#0b192f] transition-colors duration-300"
-  >
-    Resume
-  </motion.a>
-</nav>
-
+        <motion.a
+          href="/CV_DOCHITHANH_DEVELOPER.pdf"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: menuItems.length * 0.3 }}
+          className="ml-4 px-4 py-2 border border-teal-300 text-teal-300 rounded hover:bg-teal-300 hover:text-[#0b192f] transition-colors duration-300"
+        >
+          Resume
+        </motion.a>
+      </nav>
 
       {/* Mobile Menu Button */}
       <div className="md:hidden text-teal-300">
@@ -132,7 +130,7 @@ const Header = () => {
                   key={item}
                   to={item.toLowerCase()}
                   smooth={true}
-              duration={800}
+                  duration={800}
                   offset={-80}
                   onClick={() => setMobileMenuOpen(false)}
                   className="hover:text-teal-300 cursor-pointer"
@@ -142,7 +140,7 @@ const Header = () => {
                 </Link>
               ))}
               <a
-                href="#resume"
+                href="/CV_DOCHITHANH_DEVELOPER.pdf"
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-2 px-3 py-1 border border-teal-300 text-teal-300 rounded hover:bg-teal-300 hover:text-[#0b192f]"
               >

@@ -18,29 +18,29 @@ const fadeInVariant = {
 };
 
 const FeaturedProjects = () => {
- const projects = [
-    {
-      title: "Halcyon Theme",
-      description:
-        "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      tech: ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
-      imageAlign: "left",
-    },
-    {
-      title: "Spotify Profile",
-      description:
-        "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-      tech: ["React", "Styled Components", "Express", "Spotify API", "Heroku"],
-      imageAlign: "right",
-    },
-    {
-      title: "Build a Spotify Connected App",
-      description:
-        "Having struggled with understanding how the Spotify OAuth flow works, I made the course I wish I could have had. Unlike tutorials that only cover a few concepts and leave you with half-baked GitHub repositories, this course covers everything from explaining the principles of REST APIs to implementing Spotify's OAuth flow and fetching API data in a React app. By the end of the course, you’ll have an app deployed to the internet you can add to your portfolio.",
-      tech: ["React", "Express", "Spotify API", "Styled Components"],
-      imageAlign: "left",
-    },
-  ];
+const projects = [
+  {
+    title: "Internal ERP System",
+    description:
+      "Built an internal ERP system to manage production, inventory, HR, and workflow using React.js, Node.js, and PostgreSQL. Integrated AWS S3 for secure file storage and implemented role-based access.",
+    tech: ["React.js", "Node.js", "PostgreSQL", "AWS S3", "MUI"],
+    imageAlign: "left",
+  },
+  {
+    title: "Internal Chat App",
+    description:
+      "Developed a real-time company chat application using Socket.IO for communication and React.js for UI. Enhanced team collaboration and internal transparency across departments.",
+    tech: ["React.js", "Node.js", "Socket.IO", "PostgreSQL", "MUI"],
+    imageAlign: "right",
+  },
+  {
+    title: "Credit Card Onboarding Web App",
+    description:
+      "Created a partner-facing web app for credit card application. Integrated TrustingSocial's API for face and ID verification, and built responsive UI with Tailwind CSS.",
+    tech: ["React.js", "Node.js", "Tailwind CSS", "TrustingSocial API"],
+    imageAlign: "left",
+  },
+];
 
   return (
     <div id="work" className="mt-32 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

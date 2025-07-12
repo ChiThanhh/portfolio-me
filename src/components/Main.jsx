@@ -24,61 +24,44 @@ const socialLinks = [
   { href: 'https://codepen.io', icon: <CodepenIcon size={22} /> },
 ];
 
-const experienceData = [
+ const experienceData = [
   {
-      company: "Upstatement",
-      position: "Lead Engineer",
-      companyUrl: "https://upstatement.com",
-      time: "May 2018 — Present",
-      responsibilities: [
-        "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more",
-        "Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements",
-        "Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders",
-        "Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship",
-      ],
-    },
-    {
-      company: "Apple",
-      position: "Frontend Developer",
-      companyUrl: "https://apple.com",
-      time: "Jan 2017 — Apr 2018",
-      responsibilities: [
-        "Worked on Apple.com redesign with focus on a focus on performance and accessibility",
-        "Built internal tools for localization and content management",
-        "Collaborated with cross-functional teams to deploy weekly updates",
-      ],
-    },
-    {
-      company: "Scout Studio",
-      position: "UI/UX Designer & Developer",
-      companyUrl: "#",
-      time: "2016 — 2017",
-      responsibilities: [
-        "Designed and developed branding and websites for student-run initiatives",
-        "Mentored junior members and led small design sprints",
-      ],
-    },
-    {
-      company: "Starry",
-      position: "Software Engineer Intern",
-      companyUrl: "#",
-      time: "Summer 2015",
-      responsibilities: [
-        "Built internal dashboards to monitor network traffic",
-        "Automated reporting tools for engineering team",
-      ],
-    },
-    {
-      company: "MullenLowe",
-      position: "Creative Developer",
-      companyUrl: "#",
-      time: "2014 — 2015",
-      responsibilities: [
-        "Helped launch several marketing sites for clients like JetBlue and Royal Caribbean",
-        "Worked closely with designers to create smooth UI animations",
-      ],
-    },
-  ];
+    company: "Tam Luxury",
+    companyUrl: "https://tamluxury.vn",
+    position: "Fullstack Developer",
+    time: "Mar 2024 – Present",
+    responsibilities: [
+      "Developed an internal ERP system using React.js, Node.js, and PostgreSQL to manage inventory, HR, and workflows.",
+      "Integrated AWS S3 for file storage and implemented secure authentication with role-based access control.",
+      "Built a real-time internal chat app using Socket.IO, improving communication across departments.",
+      "Collaborated with internal users to optimize UI/UX and adapt features based on real usage."
+    ],
+  },
+  {
+    company: "Pascal Group",
+    companyUrl: "https://pascalgroup.vn",
+    position: "Fullstack Developer",
+    time: "Aug 2024 – Mar 2025",
+    responsibilities: [
+      "Built a credit card onboarding web app using React.js and Node.js for partner clients.",
+      "Integrated third-party APIs like TrustingSocial for facial recognition and ID scanning.",
+      "Focused on responsive design with Tailwind CSS and enhanced security for user data.",
+      "Worked closely with stakeholders to align technical implementation with business logic."
+    ],
+  },
+  {
+    company: "Bluesky Technology",
+    companyUrl: "https://blueskytech.vn",
+    position: "Frontend Intern",
+    time: "Aug 2023 – Nov 2023",
+    responsibilities: [
+      "Worked on a café management web app using Next.js and Tailwind CSS.",
+      "Developed responsive UI components and integrated APIs from backend team.",
+      "Practiced agile collaboration, Git workflows, and frontend performance tuning.",
+    ],
+  },
+];
+
 
 
 const Main = () => {
